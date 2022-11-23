@@ -4,8 +4,9 @@ import java.util.Date;
 
 /**
  *
- * @author Mala Practica
- * @date   2022-11-22
+ * @author Mala Práctica
+ * @date   2022-11-23
+ * @verion 1.0.0
  */
 public class Libro {
     

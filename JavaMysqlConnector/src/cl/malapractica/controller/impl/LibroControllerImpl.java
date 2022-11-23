@@ -1,19 +1,20 @@
-package cl.malapractica.service.impl;
+package cl.malapractica.controller.impl;
 
 import cl.malapractica.model.dao.LibroDAO;
 import cl.malapractica.model.entidades.Libro;
-import cl.malapractica.service.ILibroService;
 import java.util.List;
+import cl.malapractica.controller.ILibroController;
 
 /**
- *
- * @author jazocar
+ * @author Mala Práctica
+ * @date   2022-11-23
+ * @verion 1.0.0
  */
-public class LibroServiceImpl implements ILibroService {
+public class LibroControllerImpl implements ILibroController {
     
     LibroDAO libroDao;
     
-    public LibroServiceImpl(){
+    public LibroControllerImpl(){
         libroDao = new LibroDAO();
     }
 

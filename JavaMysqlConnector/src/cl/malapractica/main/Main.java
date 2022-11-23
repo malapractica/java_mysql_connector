@@ -1,14 +1,15 @@
 package cl.malapractica.main;
 
 import cl.malapractica.model.entidades.Libro;
-import cl.malapractica.service.ILibroService;
-import cl.malapractica.service.impl.LibroServiceImpl;
+import cl.malapractica.controller.impl.LibroControllerImpl;
 import java.util.Date;
 import java.util.List;
+import cl.malapractica.controller.ILibroController;
 
 /**
- *
- * @author jazocar
+ * @author Mala Práctica
+ * @date   2022-11-23
+ * @verion 1.0.0
  */
 public class Main {
 
@@ -17,7 +18,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ILibroService libroService = new LibroServiceImpl();
+        ILibroController libroService = new LibroControllerImpl();
         
         Libro libro = new Libro("CODE01", "NUEVO LIBRO", "DESCRIPCIÓN DEL LIBRO", 29990, new Date());
         libroService.save(libro);
